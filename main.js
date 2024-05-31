@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
+
     const nameElemento = document.getElementById('name');
     const userNameElemeto = document.getElementById('username');
     const avatarElemento = document.getElementById('avatar');
-    const repositorio = document.getElementById('repositorio');
+    const repositorio = document.getElementById('repo-count');
     const seguidores = document.getElementById('seguidores');
     const seguindo = document.getElementById('seguindo');
     const userLink = document.getElementById('userlink')
@@ -17,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         avatarElemento.src = json.avatar_url;
         seguidores.innerText = json.followers;
         seguindo.innerText = json.following;
-        repositorio.innerText = json.Welliveltondev.tab.repositories;
+        repositorio.innerText = json.public_repos;
         userLink.href = json.html_url;
     })
 })
